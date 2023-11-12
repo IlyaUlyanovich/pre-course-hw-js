@@ -11,4 +11,4 @@ switch (true) {
      break; 
    default:
     console.log("Default"); 
-   }
+   } 
