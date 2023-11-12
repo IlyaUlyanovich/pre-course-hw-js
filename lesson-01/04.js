@@ -4,4 +4,4 @@ x = (x * 2);
 x = (x - 4);
 x = (x / 3);
 
-console.log(x);
+console.log(x); 
