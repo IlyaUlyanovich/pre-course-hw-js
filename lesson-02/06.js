@@ -1,14 +1,15 @@
-let passport = {
+
+let passportWithAddress = {
     name: "Petr",
     surname: "Petrov",
     address: {
         country: "USA",
-        city: "LA",
+        city: "LA"
     }
 };
 
-let newPassport = JSON.parse(JSON.stringify(passport));
+let newPassport = JSON.parse(JSON.stringify(passportWithAddress));
 newPassport.address.city = "Bobryisk";
 
-console.log(passport.address.city);  // Выводит "LA"
-console.log(newPassport.address.city);  // Выводит "Bobryisk"
+console.log(passportWithAddress.address.city);  
+console.log(newPassport.address.city);
