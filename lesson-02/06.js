@@ -8,7 +8,7 @@ let passportWithAddress = {
     }
 };
 
-let newPassport = JSON.parse(JSON.stringify(passportWithAddress));
+const newPassport = JSON.parse(JSON.stringify(passportWithAddress));
 newPassport.address.city = "Bobryisk";
 
 console.log(passportWithAddress.address.city);  
