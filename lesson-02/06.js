@@ -4,7 +4,7 @@ let passportWithAddress = {
     surname: "Petrov",
     address: {
         country: "USA",
-        city: "LA"
+        city: "LA",
     }
 };
 
