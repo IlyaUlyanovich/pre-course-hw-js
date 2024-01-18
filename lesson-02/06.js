@@ -8,8 +8,8 @@ let passportWithAddress = {
     }
 };
 
-const deepCopyPassportWithAddress = JSON.parse(JSON.stringify(passportWithAddress))
-deepCopyPassportWithAddress.address.city = 'Bobryisk'
+const copyPassportWithAddress = JSON.parse(JSON.stringify(passportWithAddress));
+copyPassportWithAddress.address.city = "Bobryisk";
 
 console.log(passportWithAddress.address.city);  
-console.log(deepCopyPassportWithAddress.address.city);
+console.log(copyPassportWithAddress.address.city);
