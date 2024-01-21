@@ -7,9 +7,11 @@ let passportWithAddress = {
     }
 };
 
+// Create a deep copy of the object using JSON.parse() and JSON.stringify()
+let clonedPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
-let clonedPassport = structuredClone(passportWithAddress);
+// Modify the cloned object
 clonedPassport.address.city = 'Bobryisk';
 
-console.log(passportWithAddress.address.city);  
-console.log(clonedPassport.address.city);  
+console.log(passportWithAddress.address.city);  // Output: "LA"
+console.log(clonedPassport.address.city);  // Output: "Bobryisk"
