@@ -7,8 +7,8 @@ let passportWithAddress = {
     }
 };
 
-// Create a deep copy of the object using JSON.parse() and JSON.stringify()
-let clonedPassport = JSON.parse(JSON.stringify(passportWithAddress));
+// Create a deep copy of the object using the spread operator and object destructuring
+let clonedPassport = { ...passportWithAddress, address: { ...passportWithAddress.address } };
 
 // Modify the cloned object
 clonedPassport.address.city = 'Bobryisk';
