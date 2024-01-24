@@ -11,5 +11,5 @@ let clonedPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
 clonedPassport.address.city = 'Bobryisk';
 
-console.log(passportWithAddress.address.city); 
 console.log(clonedPassport.address.city); 
+console.log(passportWithAddress.address.city); 
